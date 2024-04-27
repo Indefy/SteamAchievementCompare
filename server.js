@@ -1,11 +1,13 @@
-const express = require("express");
+// Import required libraries
 const bodyParser = require("body-parser");
 const path = require("path");
 const axios = require("axios");
 const cheerio = require("cheerio");
 
+// Create an Express app
+const express = require("express");
 const app = express();
-const PORT = 3111;
+const port = 3111;
 
 // Serve static files from the 'public' directory
 app.use(express.static(path.join(__dirname, "public")));
