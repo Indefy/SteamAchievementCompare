@@ -1,0 +1,82 @@
+/* Home page styles */
+body {
+	font-family: "Arial", sans-serif; /* Clean, sans-serif font */
+	margin: 0;
+	padding: 20px;
+	background-color: #f4f4f4; /* Subtle background color */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100vh;
+}
+
+h1 {
+	color: #333; /* Dark heading */
+	margin-bottom: 30px;
+}
+
+form {
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 8px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+input[type="text"] {
+	width: 100%;
+	padding: 12px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+button[type="submit"] {
+	background-color: #007bff; /* Blue button */
+	color: #fff;
+	border: none;
+	padding: 12px 20px;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+button[type="submit"]:hover {
+	background-color: #0056b3; /* Slightly darker blue on hover */
+}
+
+/* Styling for compare page */
+body.compare-page .comparison-container {
+	width: 80%;
+	margin: 20px auto;
+	padding: 20px;
+	border: 1px solid #ddd;
+	display: flex; /* For Flexbox layout */
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+body.compare-page .comparison-header {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+body.compare-page .account-results {
+	flex: 1; /* Allow elements to grow */
+	margin: 0 20px;
+}
+
+body.compare-page .achievement-item {
+	margin-bottom: 10px;
+}
+
+body.compare-page .account-results .achievement-item {
+	margin-bottom: 10px;
+	word-break: break-word; /* Allow long achievement titles to wrap */
+}

@@ -1,0 +1,20 @@
+{
+	"name": "steam_achievement_compare",
+	"version": "1.0.0",
+	"main": "server.js",
+	"scripts": {
+		"start": "nodemon server.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "Adi Booker",
+	"license": "ISC",
+	"description": "A Steam profiles Achievements compare App",
+	"dependencies": {
+		"axios": "^1.6.8",
+		"body-parser": "^1.20.2",
+		"cheerio": "^1.0.0-rc.12",
+		"express": "^4.19.2",
+		"path": "^0.12.7"
+	}
+}
