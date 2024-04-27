@@ -5,7 +5,7 @@ const axios = require("axios");
 const cheerio = require("cheerio");
 
 const app = express();
-const PORT = 8080;
+const PORT = 3111;
 
 // Serve static files from the 'public' directory
 app.use(express.static(path.join(__dirname, "public")));
@@ -141,4 +141,6 @@ function compareAchievements(
 	return comparisonResult;
 }
 
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(port, () => {
+	console.log(`App is live at http://localhost:${port}`);
+});
